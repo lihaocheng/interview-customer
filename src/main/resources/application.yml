@@ -1,0 +1,23 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/interview?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+pagehelper:
+  helper-dialect: mysql
+  params: countSql
+  reasonable: true
+  support-methods-arguments: true
+  
+logging:
+  path: ./log 
+  file: interview-customer.log
