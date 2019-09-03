@@ -5,11 +5,15 @@ spring:
     name: provider
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1/interview?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.1.103/interview?useSSL=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
     
 mybatis:
+  type-aliases-package:
+    com.lee.interview.customer.domain
+  mapper-locations:
+    classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
 pagehelper:

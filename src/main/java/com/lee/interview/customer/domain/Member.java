@@ -31,7 +31,7 @@ public class Member {
 		member.setSex(req.getSex());
 		member.setPhone(req.getPhone());
 		member.setEmail(req.getEmail());
-		member.setAddress(req.getEmail());
+		member.setAddress(req.getAddress());
 		member.setJoinTime(DateUtil.currentTimestamp());
 		member.setCreateTime(DateUtil.currentTimestamp());
 		member.setStatus(MemberStatusEnum.NEW_CREATE.getStatusId());
